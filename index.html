@@ -247,7 +247,7 @@ input:focus-visible,button:focus-visible,a:focus-visible{outline:3px solid #2B1D
 <h2 style="margin: 0; font-size: 20px; font-weight: 700">구독 조회</h2>
 <p style="margin: 0; font-size: 15px; color: #5E4D3B; line-height: 1.6">주문할 때 받은 주문번호와 주문서에 적은 연락처를 입력하세요.</p>
 <label style="display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 700">주문번호<input data-model="mgNo" placeholder="예: 5M1118-12345" style="border: 1px solid #D9CDB8; border-radius: 10px; padding: 12px 14px; font-size: 16px; background: #FFFFFF; color: #2B1D0E"></label>
-<label style="display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 700">연락처<input type="tel" data-model="mgPhone" placeholder="010-0000-0000" style="border: 1px solid #D9CDB8; border-radius: 10px; padding: 12px 14px; font-size: 16px; background: #FFFFFF; color: #2B1D0E"></label>
+<label style="display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 700">연락처<input type="tel" inputMode="numeric" maxLength="11" data-model="mgPhone" placeholder="01012345678 (- 없이 숫자만)" style="border: 1px solid #D9CDB8; border-radius: 10px; padding: 12px 14px; font-size: 16px; background: #FFFFFF; color: #2B1D0E"></label>
 <div data-if="mgHasErr">
 <p role="alert" style="margin: 0; background: #FDECEA; color: #8A1C12; border-radius: 10px; padding: 12px 14px; font-size: 15px; font-weight: 700"><span data-text="mgErr"></span></p>
 </div>
@@ -400,7 +400,7 @@ input:focus-visible,button:focus-visible,a:focus-visible{outline:3px solid #2B1D
 <fieldset style="border: 0; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 14px">
 <legend style="font-size: 18px; font-weight: 700; margin-bottom: 12px">받는 분</legend>
 <label style="display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 700">이름<input required="" data-model="name" placeholder="홍길동" style="border: 1px solid #D9CDB8; border-radius: 10px; padding: 12px 14px; font-size: 16px; background: #FFFFFF; color: #2B1D0E"></label>
-<label style="display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 700">연락처<input required="" type="tel" data-model="phone" placeholder="010-0000-0000" style="border: 1px solid #D9CDB8; border-radius: 10px; padding: 12px 14px; font-size: 16px; background: #FFFFFF; color: #2B1D0E"></label>
+<label style="display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 700">연락처<input required="" type="tel" inputMode="numeric" maxLength="11" data-model="phone" placeholder="01012345678 (- 없이 숫자만)" style="border: 1px solid #D9CDB8; border-radius: 10px; padding: 12px 14px; font-size: 16px; background: #FFFFFF; color: #2B1D0E"></label>
 <label style="display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 700">배송 주소<input required="" data-model="addr" placeholder="서울시 ○○구 ○○로 00, 101동 101호" style="border: 1px solid #D9CDB8; border-radius: 10px; padding: 12px 14px; font-size: 16px; background: #FFFFFF; color: #2B1D0E"></label>
 <label style="display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 700">입금자명<input required="" data-model="payer" placeholder="입금하실 분 이름" style="border: 1px solid #D9CDB8; border-radius: 10px; padding: 12px 14px; font-size: 16px; background: #FFFFFF; color: #2B1D0E"></label>
 </fieldset>
@@ -498,7 +498,7 @@ input:focus-visible,button:focus-visible,a:focus-visible{outline:3px solid #2B1D
 <legend style="font-size: 18px; font-weight: 700; margin-bottom: 12px">담당자</legend>
 <label style="display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 700">담당자 이름<input required="" data-model="qname" placeholder="홍길동" style="border: 1px solid #D9CDB8; border-radius: 10px; padding: 12px 14px; font-size: 16px; background: #FFFFFF; color: #2B1D0E"></label>
 <div style="display: flex; flex-wrap: wrap; gap: 14px">
-<label style="flex: 1 1 200px; display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 700">연락처<input required="" type="tel" data-model="qphone" placeholder="010-0000-0000" style="border: 1px solid #D9CDB8; border-radius: 10px; padding: 12px 14px; font-size: 16px; background: #FFFFFF; color: #2B1D0E"></label>
+<label style="flex: 1 1 200px; display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 700">연락처<input required="" type="tel" inputMode="numeric" maxLength="11" data-model="qphone" placeholder="01012345678 (- 없이 숫자만)" style="border: 1px solid #D9CDB8; border-radius: 10px; padding: 12px 14px; font-size: 16px; background: #FFFFFF; color: #2B1D0E"></label>
 <label style="flex: 1 1 200px; display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 700">이메일<input type="email" data-model="qemail" placeholder="name@company.com" style="border: 1px solid #D9CDB8; border-radius: 10px; padding: 12px 14px; font-size: 16px; background: #FFFFFF; color: #2B1D0E"></label>
 </div>
 <label style="display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 700">요청사항 (선택)<textarea data-model="qmemo" rows="4" placeholder="예: 견과류 알레르기 있는 직원이 있어요, 격주 배송 가능한지 궁금해요" style="border: 1px solid #D9CDB8; border-radius: 10px; padding: 12px 14px; font-size: 16px; background: #FFFFFF; color: #2B1D0E; font-family: inherit; resize: vertical"></textarea></label>
@@ -801,9 +801,21 @@ input:focus-visible,button:focus-visible,a:focus-visible{outline:3px solid #2B1D
 
   document.querySelectorAll('[data-model]').forEach(function (el) {
     el.addEventListener('input', function () {
-      s[el.getAttribute('data-model')] = el.value;
+      var k = el.getAttribute('data-model');
+      var v = el.value;
+      if (k === 'phone' || k === 'qphone' || k === 'mgPhone') {
+        v = v.replace(/[^0-9]/g, '').slice(0, 11);
+        if (el.value !== v) el.value = v;
+      }
+      s[k] = v;
       render();
     });
+    if (el.getAttribute('data-model') === 'qqty') {
+      el.addEventListener('blur', function () {
+        if ((parseInt(s.qqty, 10) || 0) < 30) set({ qqty: '30', quoteErr: '기업 납품은 주 30팩부터 가능해서 30팩으로 맞췄어요.' });
+        else if (s.quoteErr === '기업 납품은 주 30팩부터 가능해서 30팩으로 맞췄어요.') set({ quoteErr: '' });
+      });
+    }
   });
 
   render();
