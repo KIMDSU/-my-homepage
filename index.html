@@ -597,7 +597,7 @@ input:focus-visible,button:focus-visible,a:focus-visible{outline:3px solid #2B1D
     var tab = function (t) { return s.screen === 'policy' && s.policyTab === t; };
     return {
       isManage: s.screen === 'manage',
-      navManage: function () { go('manage', (s.pid === 'sub' && s.orderNo && !s.mgNo) ? { mgNo: s.orderNo, mgPhone: s.phone } : {}); },
+      navManage: function () { go('manage', (s.pid === 'sub' && s.orderNo && !s.mgNo) ? { mgNo: s.orderNo, mgPhone: s.phone, mgAddr: s.addr } : {}); },
       navManageStyle: navStyle(s.screen === 'manage'),
       navManageCurrent: s.screen === 'manage' ? 'page' : 'false',
       isPolicy: s.screen === 'policy',
@@ -740,8 +740,11 @@ input:focus-visible,button:focus-visible,a:focus-visible{outline:3px solid #2B1D
 
   function set(patch) { Object.assign(s, patch); render(); }
 
+  var KEEP = { order: ['order', 'pay'], pay: ['pay', 'order', 'done'], quote: ['quote', 'quoteDone'], manage: ['manage'] };
   function go(screen, extra) {
-    set(Object.assign({ screen: screen }, extra || {}));
+    var stay = s.screen === screen || (KEEP[s.screen] || []).indexOf(screen) !== -1;
+    var reset = stay ? {} : { name: '', phone: '', addr: '', payer: '', qty: 1, orderErr: '', copied: false, qcompany: '', qaddr: '', qqty: '30', qstart: '', qname: '', qphone: '', qemail: '', qmemo: '', quoteErr: '', mgFound: false, mgNo: '', mgPhone: '', mgErr: '', mgSkip: false, mgStep: 0, mgEditing: false, mgAddr: '', mgAddrDraft: '', mgMsg: '' };
+    set(Object.assign(reset, { screen: screen }, extra || {}));
     window.scrollTo(0, 0);
   }
 
