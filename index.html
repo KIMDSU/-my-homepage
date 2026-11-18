@@ -12,15 +12,16 @@ body{margin:0;background:#FFFDF7}
 a{color:#B45309}a:hover{color:#7C2D12}
 input{font:inherit}
 section[id]{scroll-margin-top:84px}
+sc-if{display:contents}
 input:focus-visible,button:focus-visible,a:focus-visible{outline:3px solid #2B1D0E;outline-offset:2px}
 </style>
-<style>[data-if][hidden]{display:none !important} textarea{font:inherit}</style>
+<style>[data-if]{display:contents} [data-if][hidden]{display:none !important} textarea{font:inherit}</style>
 </head>
 <body>
-<div style="font-family: 'Noto Sans KR', system-ui, sans-serif; color: #2B1D0E; background: #FFFDF7; min-height: 100vh; word-break: keep-all">
+<div style="font-family: 'Noto Sans KR', system-ui, sans-serif; color: #2B1D0E; background: #FFFDF7; min-height: 100vh; display: flex; flex-direction: column; word-break: keep-all">
 
 <header style="position: sticky; top: 0; z-index: 10; background: #FFFDF7; border-bottom: 1px solid #EFE6D4">
-<div style="max-width: 1160px; margin: 0 auto; padding: 14px 24px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px">
+<div style="width: 100%; box-sizing: border-box; max-width: 1208px; margin: 0 auto; padding: 14px 24px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px">
 <button data-click="goHome" style="background: none; border: 0; padding: 0; cursor: pointer; display: flex; align-items: center; gap: 10px; color: #2B1D0E">
 <span style="width: 36px; height: 36px; border-radius: 10px; background: #FFC21A; display: flex; align-items: center; justify-content: center; font-weight: 900; font-size: 18px">5</span>
 <span style="font-weight: 900; font-size: 22px; letter-spacing: -0.5px">5분아침</span>
@@ -37,9 +38,9 @@ input:focus-visible,button:focus-visible,a:focus-visible{outline:3px solid #2B1D
 </header>
 
 <div data-if="isHome">
-<main>
-<section style="background: #F4F1EB; border-bottom: 1px solid #E7E0D3">
-<div style="max-width: 1160px; margin: 0 auto; padding: 64px 24px 72px; display: flex; flex-wrap: wrap; align-items: center; gap: 48px">
+<main style="flex: 1 0 auto; display: flex; flex-direction: column; justify-content: center">
+<section style="flex: 1 0 auto; display: flex; flex-direction: column; justify-content: center; background: #F4F1EB; border-bottom: 1px solid #E7E0D3">
+<div style="width: 100%; box-sizing: border-box; max-width: 1208px; margin: 0 auto; padding: 64px 24px 64px; display: flex; flex-wrap: wrap; align-items: center; gap: 48px">
 <div style="flex: 1 1 420px; min-width: 0; display: flex; flex-direction: column; gap: 22px">
 <p style="margin: 0; font-size: 15px; font-weight: 700; letter-spacing: 1px; color: #B45309">바쁜 직장인을 위한 아침 간식 박스</p>
 <h1 style="margin: 0; font-size: clamp(40px, 6vw, 68px); line-height: 1.15; font-weight: 900; letter-spacing: -2px">출근 준비 마지막 단계,<br>한 팩 챙기기</h1>
@@ -59,8 +60,8 @@ input:focus-visible,button:focus-visible,a:focus-visible{outline:3px solid #2B1D
 </div>
 
 <div data-if="isBox">
-<main>
-<section id="box" style="max-width: 1160px; margin: 0 auto; padding: 56px 24px 40px; display: flex; flex-direction: column; gap: 36px">
+<main style="flex: 1 0 auto; display: flex; flex-direction: column; justify-content: center">
+<section id="box" style="width: 100%; box-sizing: border-box; max-width: 1208px; margin: 0 auto; padding: 56px 24px 40px; display: flex; flex-direction: column; gap: 36px">
 <div style="display: flex; flex-direction: column; gap: 10px">
 <p style="margin: 0; font-size: 15px; font-weight: 700; color: #B45309">BOX</p>
 <h2 style="margin: 0; font-size: clamp(30px, 4vw, 42px); font-weight: 900; letter-spacing: -1px">한 팩에 아침 한 번</h2>
@@ -91,7 +92,7 @@ input:focus-visible,button:focus-visible,a:focus-visible{outline:3px solid #2B1D
 </div>
 </section>
 
-<section style="max-width: 1160px; margin: 0 auto; padding: 24px 24px 40px; display: flex; flex-direction: column; gap: 18px">
+<section style="width: 100%; box-sizing: border-box; max-width: 1208px; margin: 0 auto; padding: 24px 24px 40px; display: flex; flex-direction: column; gap: 18px">
 <div style="display: flex; flex-direction: column; gap: 8px">
 <h2 style="margin: 0; font-size: clamp(24px, 3vw, 30px); font-weight: 900; letter-spacing: -0.5px">식품 표시사항</h2>
 </div>
@@ -113,7 +114,7 @@ input:focus-visible,button:focus-visible,a:focus-visible{outline:3px solid #2B1D
 </div>
 </section>
 
-<section style="max-width: 1160px; margin: 0 auto; padding: 24px 24px 96px">
+<section style="width: 100%; box-sizing: border-box; max-width: 1208px; margin: 0 auto; padding: 24px 24px 56px">
 <div style="background: #2B1D0E; color: #FFFFFF; border-radius: 24px; padding: 40px; display: flex; flex-wrap: wrap; gap: 32px; align-items: center; justify-content: space-between">
 <div style="flex: 1 1 360px; display: flex; flex-direction: column; gap: 10px">
 <h2 style="margin: 0; font-size: 30px; font-weight: 900; letter-spacing: -0.5px">편의점 줄 서는 시간보다 짧게</h2>
@@ -129,8 +130,8 @@ input:focus-visible,button:focus-visible,a:focus-visible{outline:3px solid #2B1D
 </div>
 
 <div data-if="isPrice">
-<main>
-<section id="price" style="max-width: 1160px; margin: 0 auto; padding: 56px 24px 40px; display: flex; flex-direction: column; gap: 36px">
+<main style="flex: 1 0 auto; display: flex; flex-direction: column; justify-content: center">
+<section id="price" style="width: 100%; box-sizing: border-box; max-width: 1208px; margin: 0 auto; padding: 56px 24px 40px; display: flex; flex-direction: column; gap: 36px">
 <div style="display: flex; flex-direction: column; gap: 10px">
 <p style="margin: 0; font-size: 15px; font-weight: 700; color: #B45309">PRICE</p>
 <h2 style="margin: 0; font-size: clamp(30px, 4vw, 42px); font-weight: 900; letter-spacing: -1px">나에게 맞는 박스 고르기</h2>
@@ -165,7 +166,7 @@ input:focus-visible,button:focus-visible,a:focus-visible{outline:3px solid #2B1D
 </div>
 </section>
 
-<section style="max-width: 1160px; margin: 0 auto; padding: 40px 24px 96px; display: flex; flex-direction: column; gap: 28px">
+<section style="width: 100%; box-sizing: border-box; max-width: 1208px; margin: 0 auto; padding: 40px 24px 56px; display: flex; flex-direction: column; gap: 28px">
 <h2 style="margin: 0; font-size: clamp(26px, 3.5vw, 34px); font-weight: 900; letter-spacing: -0.5px">이렇게 받아요</h2>
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px">
 <div style="display: flex; flex-direction: column; gap: 8px; border-top: 3px solid #2B1D0E; padding-top: 18px"><span style="font-size: 14px; font-weight: 700; color: #B45309">01</span><h3 style="margin: 0; font-size: 19px; font-weight: 700">박스 고르고 주문</h3><p style="margin: 0; font-size: 15px; color: #5E4D3B; line-height: 1.6">5일 박스 한 번, 또는 매주 정기구독 중 선택하세요.</p></div>
@@ -177,8 +178,8 @@ input:focus-visible,button:focus-visible,a:focus-visible{outline:3px solid #2B1D
 </div>
 
 <div data-if="isB2b">
-<main>
-<section id="b2b" style="max-width: 1160px; margin: 0 auto; padding: 56px 24px 120px">
+<main style="flex: 1 0 auto; display: flex; flex-direction: column; justify-content: center">
+<section id="b2b" style="width: 100%; box-sizing: border-box; max-width: 1208px; margin: 0 auto; padding: 56px 24px 56px">
 <div style="background: #FFFFFF; border: 1px solid #EFE6D4; border-radius: 24px; padding: 40px; display: flex; flex-wrap: wrap; gap: 36px">
 <div style="flex: 1 1 340px; display: flex; flex-direction: column; gap: 12px">
 <p style="margin: 0; font-size: 15px; font-weight: 700; color: #B45309">FOR TEAMS</p>
@@ -197,8 +198,8 @@ input:focus-visible,button:focus-visible,a:focus-visible{outline:3px solid #2B1D
 </div>
 
 <div data-if="isFaq">
-<main>
-<section style="max-width: 860px; margin: 0 auto; padding: 56px 24px 120px; display: flex; flex-direction: column; gap: 28px">
+<main style="flex: 1 0 auto; display: flex; flex-direction: column; justify-content: center">
+<section style="width: 100%; box-sizing: border-box; max-width: 908px; margin: 0 auto; padding: 56px 24px 56px; display: flex; flex-direction: column; gap: 28px">
 <div style="display: flex; flex-direction: column; gap: 10px">
 <p style="margin: 0; font-size: 15px; font-weight: 700; color: #B45309">FAQ</p>
 <h2 style="margin: 0; font-size: clamp(30px, 4vw, 42px); font-weight: 900; letter-spacing: -1px">자주 묻는 질문</h2>
@@ -235,8 +236,8 @@ input:focus-visible,button:focus-visible,a:focus-visible{outline:3px solid #2B1D
 </div>
 
 <div data-if="isManage">
-<main>
-<section style="max-width: 720px; margin: 0 auto; padding: 56px 24px 120px; display: flex; flex-direction: column; gap: 24px">
+<main style="flex: 1 0 auto; display: flex; flex-direction: column; justify-content: center">
+<section style="width: 100%; box-sizing: border-box; max-width: 768px; margin: 0 auto; padding: 56px 24px 56px; display: flex; flex-direction: column; gap: 24px">
 <div style="display: flex; flex-direction: column; gap: 10px">
 <p style="margin: 0; font-size: 15px; font-weight: 700; color: #B45309">MY SUBSCRIPTION</p>
 <h2 style="margin: 0; font-size: clamp(30px, 4vw, 42px); font-weight: 900; letter-spacing: -1px">구독 관리</h2>
@@ -316,8 +317,8 @@ input:focus-visible,button:focus-visible,a:focus-visible{outline:3px solid #2B1D
 </div>
 
 <div data-if="isPolicy">
-<main>
-<section style="max-width: 860px; margin: 0 auto; padding: 56px 24px 120px; display: flex; flex-direction: column; gap: 24px">
+<main style="flex: 1 0 auto; display: flex; flex-direction: column; justify-content: center">
+<section style="width: 100%; box-sizing: border-box; max-width: 908px; margin: 0 auto; padding: 56px 24px 56px; display: flex; flex-direction: column; gap: 24px">
 <div style="display: flex; flex-wrap: wrap; gap: 8px">
 <button type="button" data-click="openTerms" data-aria="openTermsCurrent" data-style="openTermsStyle">이용약관</button>
 <button type="button" data-click="openPrivacy" data-aria="openPrivacyCurrent" data-style="openPrivacyStyle">개인정보처리방침</button>
@@ -376,7 +377,7 @@ input:focus-visible,button:focus-visible,a:focus-visible{outline:3px solid #2B1D
 </div>
 
 <div data-if="isOrder">
-<main style="max-width: 1000px; margin: 0 auto; padding: 48px 24px 96px; display: flex; flex-direction: column; gap: 28px">
+<main style="flex: 1 0 auto; display: flex; flex-direction: column; justify-content: center; width: 100%; box-sizing: border-box; max-width: 1048px; margin: 0 auto; padding: 48px 24px 48px;  gap: 28px">
 <div style="display: flex; flex-direction: column; gap: 8px">
 <p style="margin: 0; font-size: 14px; font-weight: 700; color: #B45309">1 주문서 작성 · 2 결제 · 3 완료</p>
 <h1 style="margin: 0; font-size: 34px; font-weight: 900; letter-spacing: -1px">주문서</h1>
@@ -429,7 +430,7 @@ input:focus-visible,button:focus-visible,a:focus-visible{outline:3px solid #2B1D
 </div>
 
 <div data-if="isPay">
-<main style="max-width: 640px; margin: 0 auto; padding: 48px 24px 96px; display: flex; flex-direction: column; gap: 24px">
+<main style="flex: 1 0 auto; display: flex; flex-direction: column; justify-content: center; width: 100%; box-sizing: border-box; max-width: 688px; margin: 0 auto; padding: 48px 24px 48px;  gap: 24px">
 <div style="display: flex; flex-direction: column; gap: 8px">
 <p style="margin: 0; font-size: 14px; font-weight: 700; color: #B45309">1 주문서 작성 · 2 결제 · 3 완료</p>
 <h1 style="margin: 0; font-size: 34px; font-weight: 900; letter-spacing: -1px">무통장입금 안내</h1>
@@ -466,7 +467,7 @@ input:focus-visible,button:focus-visible,a:focus-visible{outline:3px solid #2B1D
 </div>
 
 <div data-if="isDone">
-<main style="max-width: 640px; margin: 0 auto; padding: 80px 24px 120px; display: flex; flex-direction: column; align-items: center; gap: 20px; text-align: center">
+<main style="flex: 1 0 auto; display: flex; flex-direction: column; justify-content: center; width: 100%; box-sizing: border-box; max-width: 688px; margin: 0 auto; padding: 80px 24px 80px;  align-items: center; gap: 20px; text-align: center">
 <div style="width: 80px; height: 80px; border-radius: 50%; background: #FFC21A; display: flex; align-items: center; justify-content: center">
 <svg aria-hidden="true" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#2B1D0E" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg>
 </div>
@@ -477,7 +478,7 @@ input:focus-visible,button:focus-visible,a:focus-visible{outline:3px solid #2B1D
 </div>
 
 <div data-if="isQuote">
-<main style="max-width: 1000px; margin: 0 auto; padding: 48px 24px 96px; display: flex; flex-direction: column; gap: 28px">
+<main style="flex: 1 0 auto; display: flex; flex-direction: column; justify-content: center; width: 100%; box-sizing: border-box; max-width: 1048px; margin: 0 auto; padding: 48px 24px 48px;  gap: 28px">
 <div style="display: flex; flex-direction: column; gap: 8px">
 <p style="margin: 0; font-size: 14px; font-weight: 700; color: #B45309">기업 납품</p>
 <h1 style="margin: 0; font-size: 34px; font-weight: 900; letter-spacing: -1px">견적 문의</h1>
@@ -522,7 +523,7 @@ input:focus-visible,button:focus-visible,a:focus-visible{outline:3px solid #2B1D
 </div>
 
 <div data-if="isQuoteDone">
-<main style="max-width: 640px; margin: 0 auto; padding: 80px 24px 120px; display: flex; flex-direction: column; align-items: center; gap: 20px; text-align: center">
+<main style="flex: 1 0 auto; display: flex; flex-direction: column; justify-content: center; width: 100%; box-sizing: border-box; max-width: 688px; margin: 0 auto; padding: 80px 24px 80px;  align-items: center; gap: 20px; text-align: center">
 <div style="width: 80px; height: 80px; border-radius: 50%; background: #FFC21A; display: flex; align-items: center; justify-content: center">
 <svg aria-hidden="true" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#2B1D0E" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg>
 </div>
@@ -533,7 +534,7 @@ input:focus-visible,button:focus-visible,a:focus-visible{outline:3px solid #2B1D
 </div>
 
 <footer style="background: #2B1D0E; color: #F3E9D9">
-<div style="max-width: 1160px; margin: 0 auto; padding: 36px 24px 44px; display: flex; flex-direction: column; gap: 20px; font-size: 13px; line-height: 1.8">
+<div style="width: 100%; box-sizing: border-box; max-width: 1208px; margin: 0 auto; padding: 36px 24px 44px; display: flex; flex-direction: column; gap: 20px; font-size: 13px; line-height: 1.8">
 <div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px">
 <span style="font-size: 18px; font-weight: 900; color: #FFC21A">5분아침</span>
 <nav aria-label="약관" style="display: flex; flex-wrap: wrap; gap: 6px 18px">
