@@ -26,9 +26,9 @@ input:focus-visible,button:focus-visible,a:focus-visible{outline:3px solid #2B1D
 <span style="font-weight: 900; font-size: 22px; letter-spacing: -0.5px">5분아침</span>
 </button>
 <nav style="display: flex; flex-wrap: wrap; align-items: center; gap: 20px; font-size: 15px; font-weight: 500">
-<button type="button" data-click="navBox" style="background: none; border: 0; padding: 10px 4px; min-height: 44px; font: inherit; font-size: 15px; font-weight: 500; color: #2B1D0E; cursor: pointer">박스 구성</button>
-<button type="button" data-click="navPrice" style="background: none; border: 0; padding: 10px 4px; min-height: 44px; font: inherit; font-size: 15px; font-weight: 500; color: #2B1D0E; cursor: pointer">가격·구독</button>
-<button type="button" data-click="navB2b" style="background: none; border: 0; padding: 10px 4px; min-height: 44px; font: inherit; font-size: 15px; font-weight: 500; color: #2B1D0E; cursor: pointer">기업 납품</button>
+<button type="button" data-click="navBox" data-aria="navBoxCurrent" data-style="navBoxStyle">박스 구성</button>
+<button type="button" data-click="navPrice" data-aria="navPriceCurrent" data-style="navPriceStyle">가격·구독</button>
+<button type="button" data-click="navB2b" data-aria="navB2bCurrent" data-style="navB2bStyle">기업 납품</button>
 <button data-click="startOrder" style="background: #2B1D0E; color: #FFFFFF; border: 0; border-radius: 999px; padding: 11px 20px; font-size: 15px; font-weight: 700; cursor: pointer; min-height: 44px">주문하기</button>
 </nav>
 </div>
@@ -53,8 +53,12 @@ input:focus-visible,button:focus-visible,a:focus-visible{outline:3px solid #2B1D
 </div>
 </div>
 </section>
+</main>
+</div>
 
-<section id="box" style="max-width: 1160px; margin: 0 auto; padding: 88px 24px 40px; display: flex; flex-direction: column; gap: 36px">
+<div data-if="isBox">
+<main>
+<section id="box" style="max-width: 1160px; margin: 0 auto; padding: 56px 24px 40px; display: flex; flex-direction: column; gap: 36px">
 <div style="display: flex; flex-direction: column; gap: 10px">
 <p style="margin: 0; font-size: 15px; font-weight: 700; color: #B45309">BOX</p>
 <h2 style="margin: 0; font-size: clamp(30px, 4vw, 42px); font-weight: 900; letter-spacing: -1px">한 팩에 아침 한 번</h2>
@@ -85,7 +89,7 @@ input:focus-visible,button:focus-visible,a:focus-visible{outline:3px solid #2B1D
 </div>
 </section>
 
-<section style="max-width: 1160px; margin: 0 auto; padding: 40px 24px 40px">
+<section style="max-width: 1160px; margin: 0 auto; padding: 24px 24px 96px">
 <div style="background: #2B1D0E; color: #FFFFFF; border-radius: 24px; padding: 40px; display: flex; flex-wrap: wrap; gap: 32px; align-items: center; justify-content: space-between">
 <div style="flex: 1 1 360px; display: flex; flex-direction: column; gap: 10px">
 <h2 style="margin: 0; font-size: 30px; font-weight: 900; letter-spacing: -0.5px">편의점 줄 서는 시간보다 짧게</h2>
@@ -97,8 +101,12 @@ input:focus-visible,button:focus-visible,a:focus-visible{outline:3px solid #2B1D
 </div>
 </div>
 </section>
+</main>
+</div>
 
-<section id="price" style="max-width: 1160px; margin: 0 auto; padding: 72px 24px 40px; display: flex; flex-direction: column; gap: 36px">
+<div data-if="isPrice">
+<main>
+<section id="price" style="max-width: 1160px; margin: 0 auto; padding: 56px 24px 40px; display: flex; flex-direction: column; gap: 36px">
 <div style="display: flex; flex-direction: column; gap: 10px">
 <p style="margin: 0; font-size: 15px; font-weight: 700; color: #B45309">PRICE</p>
 <h2 style="margin: 0; font-size: clamp(30px, 4vw, 42px); font-weight: 900; letter-spacing: -1px">나에게 맞는 박스 고르기</h2>
@@ -133,7 +141,7 @@ input:focus-visible,button:focus-visible,a:focus-visible{outline:3px solid #2B1D
 </div>
 </section>
 
-<section style="max-width: 1160px; margin: 0 auto; padding: 56px 24px 40px; display: flex; flex-direction: column; gap: 28px">
+<section style="max-width: 1160px; margin: 0 auto; padding: 40px 24px 96px; display: flex; flex-direction: column; gap: 28px">
 <h2 style="margin: 0; font-size: clamp(26px, 3.5vw, 34px); font-weight: 900; letter-spacing: -0.5px">이렇게 받아요</h2>
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px">
 <div style="display: flex; flex-direction: column; gap: 8px; border-top: 3px solid #2B1D0E; padding-top: 18px"><span style="font-size: 14px; font-weight: 700; color: #B45309">01</span><h3 style="margin: 0; font-size: 19px; font-weight: 700">박스 고르고 주문</h3><p style="margin: 0; font-size: 15px; color: #5E4D3B; line-height: 1.6">5일 박스 한 번, 또는 매주 정기구독 중 선택하세요.</p></div>
@@ -141,8 +149,12 @@ input:focus-visible,button:focus-visible,a:focus-visible{outline:3px solid #2B1D
 <div style="display: flex; flex-direction: column; gap: 8px; border-top: 3px solid #2B1D0E; padding-top: 18px"><span style="font-size: 14px; font-weight: 700; color: #B45309">03</span><h3 style="margin: 0; font-size: 19px; font-weight: 700">월요일 아침 7시 전, 문 앞에</h3><p style="margin: 0; font-size: 15px; color: #5E4D3B; line-height: 1.6">신발장 위에 두고, 출근할 때 한 팩만 챙기세요.</p></div>
 </div>
 </section>
+</main>
+</div>
 
-<section id="b2b" style="max-width: 1160px; margin: 0 auto; padding: 56px 24px 96px">
+<div data-if="isB2b">
+<main>
+<section id="b2b" style="max-width: 1160px; margin: 0 auto; padding: 56px 24px 120px">
 <div style="background: #FFFFFF; border: 1px solid #EFE6D4; border-radius: 24px; padding: 40px; display: flex; flex-wrap: wrap; gap: 36px">
 <div style="flex: 1 1 340px; display: flex; flex-direction: column; gap: 12px">
 <p style="margin: 0; font-size: 15px; font-weight: 700; color: #B45309">FOR TEAMS</p>
@@ -184,10 +196,10 @@ input:focus-visible,button:focus-visible,a:focus-visible{outline:3px solid #2B1D
 </div>
 <fieldset style="border: 0; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 14px">
 <legend style="font-size: 18px; font-weight: 700; margin-bottom: 12px">받는 분</legend>
-<label style="display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 700">이름<input required data-model="name" placeholder="홍길동" style="border: 1px solid #D9CDB8; border-radius: 10px; padding: 12px 14px; font-size: 16px; background: #FFFFFF; color: #2B1D0E"></label>
-<label style="display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 700">연락처<input required type="tel" data-model="phone" placeholder="010-0000-0000" style="border: 1px solid #D9CDB8; border-radius: 10px; padding: 12px 14px; font-size: 16px; background: #FFFFFF; color: #2B1D0E"></label>
-<label style="display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 700">배송 주소<input required data-model="addr" placeholder="서울시 ○○구 ○○로 00, 101동 101호" style="border: 1px solid #D9CDB8; border-radius: 10px; padding: 12px 14px; font-size: 16px; background: #FFFFFF; color: #2B1D0E"></label>
-<label style="display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 700">입금자명<input required data-model="payer" placeholder="입금하실 분 이름" style="border: 1px solid #D9CDB8; border-radius: 10px; padding: 12px 14px; font-size: 16px; background: #FFFFFF; color: #2B1D0E"></label>
+<label style="display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 700">이름<input required="" data-model="name" placeholder="홍길동" style="border: 1px solid #D9CDB8; border-radius: 10px; padding: 12px 14px; font-size: 16px; background: #FFFFFF; color: #2B1D0E"></label>
+<label style="display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 700">연락처<input required="" type="tel" data-model="phone" placeholder="010-0000-0000" style="border: 1px solid #D9CDB8; border-radius: 10px; padding: 12px 14px; font-size: 16px; background: #FFFFFF; color: #2B1D0E"></label>
+<label style="display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 700">배송 주소<input required="" data-model="addr" placeholder="서울시 ○○구 ○○로 00, 101동 101호" style="border: 1px solid #D9CDB8; border-radius: 10px; padding: 12px 14px; font-size: 16px; background: #FFFFFF; color: #2B1D0E"></label>
+<label style="display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 700">입금자명<input required="" data-model="payer" placeholder="입금하실 분 이름" style="border: 1px solid #D9CDB8; border-radius: 10px; padding: 12px 14px; font-size: 16px; background: #FFFFFF; color: #2B1D0E"></label>
 </fieldset>
 <div data-if="hasOrderErr">
 <p role="alert" style="margin: 0; background: #FDECEA; color: #8A1C12; border-radius: 10px; padding: 12px 14px; font-size: 15px; font-weight: 700"><span data-text="orderErr"></span></p>
@@ -272,18 +284,18 @@ input:focus-visible,button:focus-visible,a:focus-visible{outline:3px solid #2B1D
 <div style="flex: 999 1 460px; min-width: 0; display: flex; flex-direction: column; gap: 24px">
 <fieldset style="border: 0; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 14px">
 <legend style="font-size: 18px; font-weight: 700; margin-bottom: 12px">회사 정보</legend>
-<label style="display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 700">회사명<input required data-model="qcompany" placeholder="예: 다온컴퍼니" style="border: 1px solid #D9CDB8; border-radius: 10px; padding: 12px 14px; font-size: 16px; background: #FFFFFF; color: #2B1D0E"></label>
-<label style="display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 700">배송받을 사무실 주소<input required data-model="qaddr" placeholder="서울시 ○○구 ○○로 00, 0층" style="border: 1px solid #D9CDB8; border-radius: 10px; padding: 12px 14px; font-size: 16px; background: #FFFFFF; color: #2B1D0E"></label>
+<label style="display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 700">회사명<input required="" data-model="qcompany" placeholder="예: 다온컴퍼니" style="border: 1px solid #D9CDB8; border-radius: 10px; padding: 12px 14px; font-size: 16px; background: #FFFFFF; color: #2B1D0E"></label>
+<label style="display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 700">배송받을 사무실 주소<input required="" data-model="qaddr" placeholder="서울시 ○○구 ○○로 00, 0층" style="border: 1px solid #D9CDB8; border-radius: 10px; padding: 12px 14px; font-size: 16px; background: #FFFFFF; color: #2B1D0E"></label>
 <div style="display: flex; flex-wrap: wrap; gap: 14px">
-<label style="flex: 1 1 200px; display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 700">주당 필요 수량 (팩)<input required type="number" min="30" data-model="qqty" style="border: 1px solid #D9CDB8; border-radius: 10px; padding: 12px 14px; font-size: 16px; background: #FFFFFF; color: #2B1D0E"></label>
+<label style="flex: 1 1 200px; display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 700">주당 필요 수량 (팩)<input required="" type="number" min="30" data-model="qqty" style="border: 1px solid #D9CDB8; border-radius: 10px; padding: 12px 14px; font-size: 16px; background: #FFFFFF; color: #2B1D0E"></label>
 <label style="flex: 1 1 200px; display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 700">희망 시작일<input type="date" data-model="qstart" style="border: 1px solid #D9CDB8; border-radius: 10px; padding: 11px 14px; font-size: 16px; background: #FFFFFF; color: #2B1D0E"></label>
 </div>
 </fieldset>
 <fieldset style="border: 0; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 14px">
 <legend style="font-size: 18px; font-weight: 700; margin-bottom: 12px">담당자</legend>
-<label style="display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 700">담당자 이름<input required data-model="qname" placeholder="홍길동" style="border: 1px solid #D9CDB8; border-radius: 10px; padding: 12px 14px; font-size: 16px; background: #FFFFFF; color: #2B1D0E"></label>
+<label style="display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 700">담당자 이름<input required="" data-model="qname" placeholder="홍길동" style="border: 1px solid #D9CDB8; border-radius: 10px; padding: 12px 14px; font-size: 16px; background: #FFFFFF; color: #2B1D0E"></label>
 <div style="display: flex; flex-wrap: wrap; gap: 14px">
-<label style="flex: 1 1 200px; display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 700">연락처<input required type="tel" data-model="qphone" placeholder="010-0000-0000" style="border: 1px solid #D9CDB8; border-radius: 10px; padding: 12px 14px; font-size: 16px; background: #FFFFFF; color: #2B1D0E"></label>
+<label style="flex: 1 1 200px; display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 700">연락처<input required="" type="tel" data-model="qphone" placeholder="010-0000-0000" style="border: 1px solid #D9CDB8; border-radius: 10px; padding: 12px 14px; font-size: 16px; background: #FFFFFF; color: #2B1D0E"></label>
 <label style="flex: 1 1 200px; display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 700">이메일<input type="email" data-model="qemail" placeholder="name@company.com" style="border: 1px solid #D9CDB8; border-radius: 10px; padding: 12px 14px; font-size: 16px; background: #FFFFFF; color: #2B1D0E"></label>
 </div>
 <label style="display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 700">요청사항 (선택)<textarea data-model="qmemo" rows="4" placeholder="예: 견과류 알레르기 있는 직원이 있어요, 격주 배송 가능한지 궁금해요" style="border: 1px solid #D9CDB8; border-radius: 10px; padding: 12px 14px; font-size: 16px; background: #FFFFFF; color: #2B1D0E; font-family: inherit; resize: vertical"></textarea></label>
@@ -363,6 +375,8 @@ input:focus-visible,button:focus-visible,a:focus-visible{outline:3px solid #2B1D
     return prefix + String(d.getMonth() + 1).padStart(2, '0') + String(d.getDate()).padStart(2, '0') + '-' + String(Date.now()).slice(-digits);
   }
 
+  function navStyle(on) { return 'background: none; border: 0; border-bottom: 2px solid ' + (on ? '#2B1D0E' : 'transparent') + '; padding: 10px 4px; min-height: 44px; font: inherit; font-size: 15px; font-weight: ' + (on ? '700' : '500') + '; color: #2B1D0E; cursor: pointer'; }
+
   function vals() {
     var c = calc();
     var q = Math.max(30, parseInt(s.qqty, 10) || 30);
@@ -373,6 +387,15 @@ input:focus-visible,button:focus-visible,a:focus-visible{outline:3px solid #2B1D
       isDone: s.screen === 'done',
       isQuote: s.screen === 'quote',
       isQuoteDone: s.screen === 'quoteDone',
+      isBox: s.screen === 'box',
+      isPrice: s.screen === 'price',
+      isB2b: s.screen === 'b2b',
+      navBoxStyle: navStyle(s.screen === 'box'),
+      navPriceStyle: navStyle(s.screen === 'price'),
+      navB2bStyle: navStyle(s.screen === 'b2b'),
+      navBoxCurrent: s.screen === 'box' ? 'page' : 'false',
+      navPriceCurrent: s.screen === 'price' ? 'page' : 'false',
+      navB2bCurrent: s.screen === 'b2b' ? 'page' : 'false',
       showQty: s.pid !== 'sub',
       isSub: s.pid === 'sub',
       qty: c.qty,
@@ -428,6 +451,8 @@ input:focus-visible,button:focus-visible,a:focus-visible{outline:3px solid #2B1D
       var k = el.getAttribute('data-text');
       el.textContent = v[k] == null ? '' : v[k];
     });
+    document.querySelectorAll('[data-style]').forEach(function (el) { el.style.cssText = v[el.getAttribute('data-style')]; });
+    document.querySelectorAll('[data-aria]').forEach(function (el) { el.setAttribute('aria-current', v[el.getAttribute('data-aria')]); });
     document.querySelectorAll('[data-model]').forEach(function (el) {
       var k = el.getAttribute('data-model');
       if (document.activeElement !== el && el.value !== s[k]) el.value = s[k];
@@ -442,11 +467,6 @@ input:focus-visible,button:focus-visible,a:focus-visible{outline:3px solid #2B1D
     window.scrollTo(0, 0);
   }
 
-  function navTo(id) {
-    set({ screen: 'home' });
-    var el = document.getElementById(id);
-    if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
-  }
 
   function blank(k) { return !String(s[k]).trim(); }
 
@@ -456,9 +476,9 @@ input:focus-visible,button:focus-visible,a:focus-visible{outline:3px solid #2B1D
     pickBox5: function () { go('order', { pid: 'box5', qty: 1, orderErr: '' }); },
     pickSub: function () { go('order', { pid: 'sub', qty: 1, orderErr: '' }); },
     startQuote: function () { go('quote', { quoteErr: '' }); },
-    navBox: function () { navTo('box'); },
-    navPrice: function () { navTo('price'); },
-    navB2b: function () { navTo('b2b'); },
+    navBox: function () { go('box'); },
+    navPrice: function () { go('price'); },
+    navB2b: function () { go('b2b'); },
     inc: function () { set({ qty: Math.min(20, s.qty + 1) }); },
     dec: function () { set({ qty: Math.max(1, s.qty - 1) }); },
     submitOrder: function () {
