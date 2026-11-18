@@ -30,6 +30,7 @@ input:focus-visible,button:focus-visible,a:focus-visible{outline:3px solid #2B1D
 <button type="button" data-click="navPrice" data-aria="navPriceCurrent" data-style="navPriceStyle">가격·구독</button>
 <button type="button" data-click="navB2b" data-aria="navB2bCurrent" data-style="navB2bStyle">기업 납품</button>
 <button type="button" data-click="navFaq" data-aria="navFaqCurrent" data-style="navFaqStyle">FAQ</button>
+<button type="button" data-click="navManage" data-aria="navManageCurrent" data-style="navManageStyle">구독 관리</button>
 <button data-click="startOrder" style="background: #2B1D0E; color: #FFFFFF; border: 0; border-radius: 999px; padding: 11px 20px; font-size: 15px; font-weight: 700; cursor: pointer; min-height: 44px">주문하기</button>
 </nav>
 </div>
@@ -206,30 +207,172 @@ input:focus-visible,button:focus-visible,a:focus-visible{outline:3px solid #2B1D
 <div style="display: flex; flex-direction: column; gap: 12px">
 <details style="background: #FFFFFF; border: 1px solid #EFE6D4; border-radius: 16px; padding: 0 22px">
 <summary style="cursor: pointer; padding: 20px 0; font-size: 17px; font-weight: 700; line-height: 1.5"><span style="color: #B45309; margin-right: 8px">Q1</span>견과류 알레르기가 있어도 먹을 수 있나요?</summary>
-<p style="margin: 0; padding: 0 0 22px; font-size: 16px; color: #5E4D3B; line-height: 1.7">믹스 견과에 아몬드·호두·캐슈넛이 들어 있어 견과류 알레르기가 있다면 드시면 안 돼요. 곡물바와 사과칩도 같은 시설에서 포장되니, 박스 구성 메뉴의 식품 표시사항을 꼭 확인해 주세요.</p>
+<p style="margin: 0; padding: 0 0 22px; font-size: 16px; color: #5E4D3B; line-height: 1.7">상단 <strong>박스 구성</strong> 메뉴 아래 <strong>식품 표시사항</strong>에서 원재료와 알레르기 성분을 확인할 수 있어요. 믹스 견과에 아몬드·호두·캐슈넛이 들어 있어, 견과류 알레르기가 있다면 드시면 안 돼요.</p>
 </details>
 <details style="background: #FFFFFF; border: 1px solid #EFE6D4; border-radius: 16px; padding: 0 22px">
-<summary style="cursor: pointer; padding: 20px 0; font-size: 17px; font-weight: 700; line-height: 1.5"><span style="color: #B45309; margin-right: 8px">Q2</span>월요일 아침에 집에 없으면 어떻게 되나요?</summary>
-<p style="margin: 0; padding: 0 0 22px; font-size: 16px; color: #5E4D3B; line-height: 1.7">문 앞에 두고 가요. 모든 구성품이 상온 보관 식품이라 퇴근 후에 받아도 괜찮아요. 공동현관 비밀번호가 필요하다면 주문서 배송 주소에 함께 적어 주세요.</p>
+<summary style="cursor: pointer; padding: 20px 0; font-size: 17px; font-weight: 700; line-height: 1.5"><span style="color: #B45309; margin-right: 8px">Q2</span>구독을 한 주 쉬거나 해지하고 싶어요.</summary>
+<p style="margin: 0; padding: 0 0 22px; font-size: 16px; color: #5E4D3B; line-height: 1.7">상단 <strong>구독 관리</strong> 메뉴에서 주문번호와 연락처로 조회한 뒤 <strong>한 주 건너뛰기</strong> 또는 <strong>해지 신청</strong>을 누르세요. 다음 4주분 입금 기한 전까지 신청하면 다음 결제는 진행되지 않아요.</p>
 </details>
 <details style="background: #FFFFFF; border: 1px solid #EFE6D4; border-radius: 16px; padding: 0 22px">
-<summary style="cursor: pointer; padding: 20px 0; font-size: 17px; font-weight: 700; line-height: 1.5"><span style="color: #B45309; margin-right: 8px">Q3</span>구독을 쉬거나 해지하고 싶어요.</summary>
-<p style="margin: 0; padding: 0 0 22px; font-size: 16px; color: #5E4D3B; line-height: 1.7">다음 4주 결제일 3일 전까지 고객센터로 알려 주시면 한 주 건너뛰기나 해지를 도와드려요. 다음 4주분을 입금하지 않으면 구독은 자동으로 종료돼요.</p>
+<summary style="cursor: pointer; padding: 20px 0; font-size: 17px; font-weight: 700; line-height: 1.5"><span style="color: #B45309; margin-right: 8px">Q3</span>월요일 아침에 집에 없거나, 배송지를 바꾸고 싶어요.</summary>
+<p style="margin: 0; padding: 0 0 22px; font-size: 16px; color: #5E4D3B; line-height: 1.7">집에 없어도 문 앞에 두고 가요. 모든 구성품이 상온 보관 식품이라 퇴근 후에 받아도 괜찮아요. 정기구독 배송지는 <strong>구독 관리</strong>에서 <strong>배송지 변경</strong>을 누르면 다음 배송부터 반영돼요.</p>
 </details>
 <details style="background: #FFFFFF; border: 1px solid #EFE6D4; border-radius: 16px; padding: 0 22px">
-<summary style="cursor: pointer; padding: 20px 0; font-size: 17px; font-weight: 700; line-height: 1.5"><span style="color: #B45309; margin-right: 8px">Q4</span>입금했는데 주문 확인이 안 돼요.</summary>
-<p style="margin: 0; padding: 0 0 22px; font-size: 16px; color: #5E4D3B; line-height: 1.7">주문서의 입금자명과 실제 입금자 이름이 다르면 확인이 늦어질 수 있어요. 주문 후 1시간 안에 입금이 확인되지 않으면 주문이 자동으로 취소되니, 다시 주문해 주세요.</p>
+<summary style="cursor: pointer; padding: 20px 0; font-size: 17px; font-weight: 700; line-height: 1.5"><span style="color: #B45309; margin-right: 8px">Q4</span>주문번호는 어디서 확인하나요?</summary>
+<p style="margin: 0; padding: 0 0 22px; font-size: 16px; color: #5E4D3B; line-height: 1.7"><strong>결제하기</strong>를 누른 뒤 나오는 입금 안내 화면과 주문 완료 화면에 표시돼요. 구독 관리에서 조회할 때 필요하니 꼭 메모해 두세요.</p>
 </details>
 <details style="background: #FFFFFF; border: 1px solid #EFE6D4; border-radius: 16px; padding: 0 22px">
-<summary style="cursor: pointer; padding: 20px 0; font-size: 17px; font-weight: 700; line-height: 1.5"><span style="color: #B45309; margin-right: 8px">Q5</span>유통기한은 얼마나 남은 제품이 오나요?</summary>
-<p style="margin: 0; padding: 0 0 22px; font-size: 16px; color: #5E4D3B; line-height: 1.7">제조일로부터 6개월이 유통기한이고, 받으시는 날 기준으로 최소 3개월 이상 남은 제품만 보내드려요.</p>
+<summary style="cursor: pointer; padding: 20px 0; font-size: 17px; font-weight: 700; line-height: 1.5"><span style="color: #B45309; margin-right: 8px">Q5</span>입금했는데 주문 확인이 안 돼요.</summary>
+<p style="margin: 0; padding: 0 0 22px; font-size: 16px; color: #5E4D3B; line-height: 1.7">주문서의 입금자명과 실제 입금자 이름이 다르면 확인이 늦어질 수 있어요. 주문 후 1시간 안에 입금이 확인되지 않으면 주문이 자동으로 취소되니, 상단 <strong>주문하기</strong>에서 다시 주문해 주세요.</p>
 </details>
 <details style="background: #FFFFFF; border: 1px solid #EFE6D4; border-radius: 16px; padding: 0 22px">
 <summary style="cursor: pointer; padding: 20px 0; font-size: 17px; font-weight: 700; line-height: 1.5"><span style="color: #B45309; margin-right: 8px">Q6</span>교환이나 환불이 되나요?</summary>
-<p style="margin: 0; padding: 0 0 22px; font-size: 16px; color: #5E4D3B; line-height: 1.7">식품 특성상 개봉한 뒤에는 단순 변심으로 인한 교환·환불이 어려워요. 파손되거나 다른 상품이 왔다면 받으신 날부터 7일 안에 사진과 함께 알려 주세요. 재발송하거나 환불해 드려요.</p>
+<p style="margin: 0; padding: 0 0 22px; font-size: 16px; color: #5E4D3B; line-height: 1.7">맨 아래 <strong>교환·환불 정책</strong>에서 자세한 기준을 볼 수 있어요. 개봉한 식품은 단순 변심으로 인한 반품이 어렵고, 파손·오배송은 받은 날부터 7일 안에 사진과 함께 알려 주시면 재발송하거나 환불해 드려요.</p>
 </details>
 </div>
 <p style="margin: 0; font-size: 15px; color: #5E4D3B">찾는 답이 없다면 고객센터 [000-0000-0000]로 문의해 주세요.</p>
+</section>
+</main>
+</div>
+
+<div data-if="isManage">
+<main>
+<section style="max-width: 720px; margin: 0 auto; padding: 56px 24px 120px; display: flex; flex-direction: column; gap: 24px">
+<div style="display: flex; flex-direction: column; gap: 10px">
+<p style="margin: 0; font-size: 15px; font-weight: 700; color: #B45309">MY SUBSCRIPTION</p>
+<h2 style="margin: 0; font-size: clamp(30px, 4vw, 42px); font-weight: 900; letter-spacing: -1px">구독 관리</h2>
+<p style="margin: 0; font-size: 16px; color: #5E4D3B; line-height: 1.6">한 주 건너뛰기, 배송지 변경, 해지 신청을 여기서 할 수 있어요.</p>
+</div>
+<div data-if="mgShowLookup">
+<div style="background: #FFFFFF; border: 1px solid #EFE6D4; border-radius: 20px; padding: 28px; display: flex; flex-direction: column; gap: 16px">
+<h2 style="margin: 0; font-size: 20px; font-weight: 700">구독 조회</h2>
+<p style="margin: 0; font-size: 15px; color: #5E4D3B; line-height: 1.6">주문할 때 받은 주문번호와 주문서에 적은 연락처를 입력하세요.</p>
+<label style="display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 700">주문번호<input data-model="mgNo" placeholder="예: 5M1118-12345" style="border: 1px solid #D9CDB8; border-radius: 10px; padding: 12px 14px; font-size: 16px; background: #FFFFFF; color: #2B1D0E"></label>
+<label style="display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 700">연락처<input type="tel" data-model="mgPhone" placeholder="010-0000-0000" style="border: 1px solid #D9CDB8; border-radius: 10px; padding: 12px 14px; font-size: 16px; background: #FFFFFF; color: #2B1D0E"></label>
+<div data-if="mgHasErr">
+<p role="alert" style="margin: 0; background: #FDECEA; color: #8A1C12; border-radius: 10px; padding: 12px 14px; font-size: 15px; font-weight: 700"><span data-text="mgErr"></span></p>
+</div>
+<button type="button" data-click="mgLookup" style="background: #2B1D0E; color: #FFFFFF; border: 0; border-radius: 12px; padding: 14px 18px; font-size: 16px; font-weight: 700; cursor: pointer; min-height: 48px">조회하기</button>
+</div>
+</div>
+<div data-if="mgShowDash">
+<div style="background: #FFFFFF; border: 1px solid #EFE6D4; border-radius: 20px; padding: 28px; display: flex; flex-direction: column; gap: 6px">
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 10px; margin-bottom: 8px">
+<h2 style="margin: 0; font-size: 20px; font-weight: 700">내 구독</h2>
+<span data-style="mgBadgeStyle"><span data-text="mgStatus"></span></span>
+</div>
+<div style="display: flex; justify-content: space-between; gap: 16px; padding: 14px 0; border-bottom: 1px solid #EFE6D4; font-size: 16px"><span style="color: #5E4D3B">주문번호</span><span style="font-weight: 700"><span data-text="mgNoShown"></span></span></div>
+<div style="display: flex; justify-content: space-between; gap: 16px; padding: 14px 0; border-bottom: 1px solid #EFE6D4; font-size: 16px"><span style="color: #5E4D3B">상품</span><span style="font-weight: 700; text-align: right">정기구독 · 주 5팩 (4주 단위)</span></div>
+<div style="display: flex; justify-content: space-between; gap: 16px; padding: 14px 0; border-bottom: 1px solid #EFE6D4; font-size: 16px"><span style="color: #5E4D3B">다음 배송</span><span style="font-weight: 700; text-align: right"><span data-text="mgNextDelivery"></span></span></div>
+<div style="display: flex; justify-content: space-between; gap: 16px; padding: 14px 0; border-bottom: 1px solid #EFE6D4; font-size: 16px"><span style="color: #5E4D3B">다음 4주분 입금</span><span style="font-weight: 700; text-align: right"><span data-text="mgNextPay"></span></span></div>
+<div style="padding: 14px 0; display: flex; flex-direction: column; gap: 10px; border-bottom: 1px solid #EFE6D4">
+<span style="color: #5E4D3B; font-size: 16px">배송지</span>
+<div data-if="mgAddrView">
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 12px">
+<span style="font-size: 16px; line-height: 1.6"><span data-text="mgAddr"></span></span>
+<button type="button" data-click="mgEditAddr" style="background: #FFFFFF; color: #2B1D0E; border: 2px solid #2B1D0E; border-radius: 12px; padding: 12px 18px; font-size: 16px; font-weight: 700; cursor: pointer; min-height: 48px">배송지 변경</button>
+</div>
+</div>
+<div data-if="mgAddrEditing">
+<div style="display: flex; flex-direction: column; gap: 10px">
+<label style="display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 700">새 배송지<input data-model="mgAddrDraft" placeholder="서울시 ○○구 ○○로 00, 101동 101호" style="border: 1px solid #D9CDB8; border-radius: 10px; padding: 12px 14px; font-size: 16px; background: #FFFFFF; color: #2B1D0E"></label>
+<div style="display: flex; flex-wrap: wrap; gap: 10px">
+<button type="button" data-click="mgSaveAddr" style="background: #2B1D0E; color: #FFFFFF; border: 0; border-radius: 12px; padding: 14px 18px; font-size: 16px; font-weight: 700; cursor: pointer; min-height: 48px">저장</button>
+<button type="button" data-click="mgCancelEdit" style="background: #FFFFFF; color: #2B1D0E; border: 2px solid #2B1D0E; border-radius: 12px; padding: 12px 18px; font-size: 16px; font-weight: 700; cursor: pointer; min-height: 48px">취소</button>
+</div>
+</div>
+</div>
+</div>
+<div data-if="mgHasMsg">
+<p role="status" style="margin: 8px 0 0; background: #FFF4D6; border-radius: 10px; padding: 12px 14px; font-size: 15px; font-weight: 700"><span data-text="mgMsg"></span></p>
+</div>
+<div style="padding-top: 16px; display: flex; flex-direction: column; gap: 12px">
+<div data-if="mgCanAct">
+<div style="display: flex; flex-wrap: wrap; gap: 10px">
+<button type="button" data-click="mgToggleSkip" style="background: #2B1D0E; color: #FFFFFF; border: 0; border-radius: 12px; padding: 14px 18px; font-size: 16px; font-weight: 700; cursor: pointer; min-height: 48px"><span data-text="mgSkipLabel"></span></button>
+<button type="button" data-click="mgAskCancel" style="background: #FFFFFF; color: #2B1D0E; border: 2px solid #2B1D0E; border-radius: 12px; padding: 12px 18px; font-size: 16px; font-weight: 700; cursor: pointer; min-height: 48px">해지 신청</button>
+</div>
+</div>
+<div data-if="mgAsking">
+<div style="background: #FDECEA; border-radius: 14px; padding: 18px; display: flex; flex-direction: column; gap: 12px">
+<p style="margin: 0; font-size: 16px; font-weight: 700; color: #8A1C12">정말 해지할까요?</p>
+<p style="margin: 0; font-size: 15px; color: #5E4D3B; line-height: 1.6">이미 입금한 4주분은 끝까지 배송되고, 그 뒤로는 결제와 배송이 모두 멈춰요.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 10px">
+<button type="button" data-click="mgConfirmCancel" style="background: #8A1C12; color: #FFFFFF; border: 0; border-radius: 12px; padding: 14px 18px; font-size: 16px; font-weight: 700; cursor: pointer; min-height: 48px">해지 확정</button>
+<button type="button" data-click="mgKeep" style="background: #FFFFFF; color: #2B1D0E; border: 2px solid #2B1D0E; border-radius: 12px; padding: 12px 18px; font-size: 16px; font-weight: 700; cursor: pointer; min-height: 48px">계속 이용할게요</button>
+</div>
+</div>
+</div>
+<div data-if="mgCancelled">
+<div style="display: flex; flex-wrap: wrap; gap: 10px">
+<button type="button" data-click="mgUndoCancel" style="background: #FFFFFF; color: #2B1D0E; border: 2px solid #2B1D0E; border-radius: 12px; padding: 12px 18px; font-size: 16px; font-weight: 700; cursor: pointer; min-height: 48px">해지 철회</button>
+</div>
+</div>
+</div>
+<button type="button" data-click="mgLogout" style="align-self: flex-start; margin-top: 12px; background: none; border: 0; padding: 8px 0; color: #B45309; font-size: 14px; font-weight: 700; cursor: pointer; text-decoration: underline">다른 주문번호로 조회</button>
+</div>
+</div>
+<p style="margin: 0; font-size: 14px; color: #5E4D3B">※ 수업 시연용 화면으로, 실제 구독 정보는 저장되지 않아요.</p>
+</section>
+</main>
+</div>
+
+<div data-if="isPolicy">
+<main>
+<section style="max-width: 860px; margin: 0 auto; padding: 56px 24px 120px; display: flex; flex-direction: column; gap: 24px">
+<div style="display: flex; flex-wrap: wrap; gap: 8px">
+<button type="button" data-click="openTerms" data-aria="openTermsCurrent" data-style="openTermsStyle">이용약관</button>
+<button type="button" data-click="openPrivacy" data-aria="openPrivacyCurrent" data-style="openPrivacyStyle">개인정보처리방침</button>
+<button type="button" data-click="openRefund" data-aria="openRefundCurrent" data-style="openRefundStyle">교환·환불 정책</button>
+</div>
+<div data-if="isTerms">
+<article style="background: #FFFFFF; border: 1px solid #EFE6D4; border-radius: 20px; padding: 32px; display: flex; flex-direction: column; gap: 10px">
+<h2 style="margin: 0; font-size: 24px; font-weight: 900">이용약관</h2>
+<h3 style="margin: 12px 0 0; font-size: 18px; font-weight: 700">제1조 (목적)</h3>
+<p style="margin: 0; font-size: 16px; color: #4A3B2C; line-height: 1.8">이 약관은 5분아침(대표 김동수, 이하 “회사”)이 운영하는 홈페이지에서 제공하는 상품 판매 및 정기구독 서비스의 이용 조건과 절차를 정합니다.</p>
+<h3 style="margin: 12px 0 0; font-size: 18px; font-weight: 700">제2조 (주문과 계약 성립)</h3>
+<p style="margin: 0; font-size: 16px; color: #4A3B2C; line-height: 1.8">고객이 주문서를 작성하고 안내된 계좌로 결제 금액을 입금하면, 회사가 입금을 확인한 때에 계약이 성립합니다. 주문 후 1시간 안에 입금이 확인되지 않으면 주문은 자동으로 취소됩니다.</p>
+<h3 style="margin: 12px 0 0; font-size: 18px; font-weight: 700">제3조 (정기구독)</h3>
+<p style="margin: 0; font-size: 16px; color: #4A3B2C; line-height: 1.8">정기구독은 4주 단위로 미리 결제하며, 첫 4주는 첫 주 30% 할인이 적용된 금액(58,830원), 이후 4주마다 63,600원입니다. 고객은 구독 관리 메뉴에서 한 주 건너뛰기, 배송지 변경, 해지 신청을 할 수 있습니다.</p>
+<h3 style="margin: 12px 0 0; font-size: 18px; font-weight: 700">제4조 (배송)</h3>
+<p style="margin: 0; font-size: 16px; color: #4A3B2C; line-height: 1.8">정기구독은 매주 월요일 아침 7시 전, 평일 5일 박스는 입금 확인 후 1~2일 안에 배송합니다. 천재지변 등 불가피한 사유로 늦어질 경우 미리 알려 드립니다.</p>
+<h3 style="margin: 12px 0 0; font-size: 18px; font-weight: 700">제5조 (청약철회 및 환불)</h3>
+<p style="margin: 0; font-size: 16px; color: #4A3B2C; line-height: 1.8">청약철회와 환불 기준은 교환·환불 정책에 따릅니다.</p>
+<h3 style="margin: 12px 0 0; font-size: 18px; font-weight: 700">제6조 (회사의 의무)</h3>
+<p style="margin: 0; font-size: 16px; color: #4A3B2C; line-height: 1.8">회사는 관련 법령을 지키며, 고객의 개인정보를 개인정보처리방침에 따라 보호합니다.</p>
+</article>
+</div>
+<div data-if="isPrivacy">
+<article style="background: #FFFFFF; border: 1px solid #EFE6D4; border-radius: 20px; padding: 32px; display: flex; flex-direction: column; gap: 10px">
+<h2 style="margin: 0; font-size: 24px; font-weight: 900">개인정보처리방침</h2>
+<h3 style="margin: 12px 0 0; font-size: 18px; font-weight: 700">1. 수집하는 개인정보</h3>
+<p style="margin: 0; font-size: 16px; color: #4A3B2C; line-height: 1.8">주문 시: 이름, 연락처, 배송 주소, 입금자명<br>기업 견적 문의 시: 회사명, 사무실 주소, 담당자 이름, 연락처, 이메일</p>
+<h3 style="margin: 12px 0 0; font-size: 18px; font-weight: 700">2. 이용 목적</h3>
+<p style="margin: 0; font-size: 16px; color: #4A3B2C; line-height: 1.8">주문 확인과 입금 확인, 상품 배송, 정기구독 관리, 견적 안내, 고객 문의 응대에만 사용합니다.</p>
+<h3 style="margin: 12px 0 0; font-size: 18px; font-weight: 700">3. 보관 기간</h3>
+<p style="margin: 0; font-size: 16px; color: #4A3B2C; line-height: 1.8">관련 법령에 따라 계약·청약철회 및 대금 결제 기록은 5년, 소비자 불만 및 분쟁 처리 기록은 3년 동안 보관한 뒤 지체 없이 파기합니다.</p>
+<h3 style="margin: 12px 0 0; font-size: 18px; font-weight: 700">4. 제3자 제공</h3>
+<p style="margin: 0; font-size: 16px; color: #4A3B2C; line-height: 1.8">상품 배송을 위해 배송 업체에 받는 분의 이름, 연락처, 주소를 제공합니다. 그 밖에는 고객의 동의 없이 제공하지 않습니다.</p>
+<h3 style="margin: 12px 0 0; font-size: 18px; font-weight: 700">5. 고객의 권리</h3>
+<p style="margin: 0; font-size: 16px; color: #4A3B2C; line-height: 1.8">고객은 언제든 자신의 개인정보 열람, 정정, 삭제, 처리 정지를 요청할 수 있습니다.</p>
+<h3 style="margin: 12px 0 0; font-size: 18px; font-weight: 700">6. 개인정보 보호책임자</h3>
+<p style="margin: 0; font-size: 16px; color: #4A3B2C; line-height: 1.8">김동수 · 고객센터 [000-0000-0000]</p>
+</article>
+</div>
+<div data-if="isRefund">
+<article style="background: #FFFFFF; border: 1px solid #EFE6D4; border-radius: 20px; padding: 32px; display: flex; flex-direction: column; gap: 10px">
+<h2 style="margin: 0; font-size: 24px; font-weight: 900">교환·환불 정책</h2>
+<h3 style="margin: 12px 0 0; font-size: 18px; font-weight: 700">단순 변심</h3>
+<p style="margin: 0; font-size: 16px; color: #4A3B2C; line-height: 1.8">상품을 받은 날부터 7일 안에 청약철회를 요청할 수 있습니다. 다만 식품 특성상 포장을 개봉했거나 일부를 섭취한 경우에는 반품이 어렵습니다. 반품 배송비는 고객이 부담합니다.</p>
+<h3 style="margin: 12px 0 0; font-size: 18px; font-weight: 700">파손·오배송</h3>
+<p style="margin: 0; font-size: 16px; color: #4A3B2C; line-height: 1.8">상품이 파손되었거나 주문과 다른 상품이 도착한 경우, 받은 날부터 7일 안에 사진과 함께 알려 주시면 회사 부담으로 재발송하거나 환불해 드립니다.</p>
+<h3 style="margin: 12px 0 0; font-size: 18px; font-weight: 700">정기구독 해지 시 환불</h3>
+<p style="margin: 0; font-size: 16px; color: #4A3B2C; line-height: 1.8">이미 입금한 4주분 가운데 아직 발송되지 않은 주차분을 환불합니다. 환불 금액은 결제 금액에서 발송이 끝난 주차 수 × 15,900원을 뺀 금액입니다.</p>
+<h3 style="margin: 12px 0 0; font-size: 18px; font-weight: 700">환불 방법</h3>
+<p style="margin: 0; font-size: 16px; color: #4A3B2C; line-height: 1.8">환불은 요청이 확인된 날부터 영업일 3일 안에 입금하신 계좌로 돌려 드립니다.</p>
+</article>
+</div>
+<p style="margin: 0; font-size: 14px; color: #5E4D3B">※ 수업용 예시 문서로, 법률 검토를 거친 실제 약관이 아닙니다. 시행일: 2026년 11월 18일</p>
 </section>
 </main>
 </div>
@@ -393,14 +536,22 @@ input:focus-visible,button:focus-visible,a:focus-visible{outline:3px solid #2B1D
 </div>
 
 <footer style="background: #2B1D0E; color: #F3E9D9">
-<div style="max-width: 1160px; margin: 0 auto; padding: 36px 24px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 16px; font-size: 13px; line-height: 1.7">
-<div style="display: flex; flex-direction: column; gap: 4px">
+<div style="max-width: 1160px; margin: 0 auto; padding: 36px 24px 44px; display: flex; flex-direction: column; gap: 20px; font-size: 13px; line-height: 1.8">
+<div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px">
 <span style="font-size: 18px; font-weight: 900; color: #FFC21A">5분아침</span>
-<span>AI 콘텐츠 제작 수업 과제용 가상 브랜드 · 2023101747 김동수</span>
+<nav aria-label="약관" style="display: flex; flex-wrap: wrap; gap: 6px 18px">
+<button type="button" data-click="openTerms" style="background: none; border: 0; padding: 6px 0; font: inherit; font-size: 14px; color: #FFFFFF; cursor: pointer; text-decoration: underline; min-height: 32px">이용약관</button>
+<button type="button" data-click="openPrivacy" style="background: none; border: 0; padding: 6px 0; font: inherit; font-size: 14px; font-weight: 700; color: #FFFFFF; cursor: pointer; text-decoration: underline; min-height: 32px">개인정보처리방침</button>
+<button type="button" data-click="openRefund" style="background: none; border: 0; padding: 6px 0; font: inherit; font-size: 14px; color: #FFFFFF; cursor: pointer; text-decoration: underline; min-height: 32px">교환·환불 정책</button>
+</nav>
 </div>
-<div style="display: flex; flex-direction: column; gap: 4px; max-width: 520px">
-<span>※ 제품과 인물 이미지는 모두 AI로 생성한 가상의 것입니다.</span>
-<span>※ 수업 시연용 페이지로, 실제 상품 판매·배송은 이루어지지 않습니다.</span>
+<div style="border-top: 1px solid #4A3B2C; padding-top: 18px; display: flex; flex-direction: column; gap: 2px">
+<span>상호 5분아침 · 대표자 김동수 · 사업자등록번호 202-31-01747 · 통신판매업 신고번호 [제0000-서울○○-0000호]</span>
+<span>주소 [사업장 주소] · 고객센터 [000-0000-0000] · 개인정보 보호책임자 김동수</span>
+</div>
+<div style="display: flex; flex-direction: column; gap: 2px; color: #D9CDB8">
+<span>※ AI 콘텐츠 제작 수업 과제용 가상 브랜드이며, 사업자등록번호는 학번(2023101747)으로 대신 표기했습니다.</span>
+<span>※ 제품과 인물 이미지는 모두 AI로 생성한 가상의 것입니다. 실제 상품 판매·배송은 이루어지지 않습니다.</span>
 </div>
 </div>
 </footer>
@@ -414,7 +565,7 @@ input:focus-visible,button:focus-visible,a:focus-visible{outline:3px solid #2B1D
   var ORDER = ['box5', 'sub'];
 
   var s = {
-    screen: 'home', pid: 'box5', qty: 1,
+    screen: 'home', policyTab: 'terms', mgFound: false, mgNo: '', mgPhone: '', mgErr: '', mgSkip: false, mgStep: 0, mgEditing: false, mgAddr: '', mgAddrDraft: '', mgMsg: '', pid: 'box5', qty: 1,
     name: '', phone: '', addr: '', payer: '',
     orderNo: '', copied: false, orderErr: '',
     qcompany: '', qaddr: '', qqty: '30', qstart: '', qname: '', qphone: '', qemail: '', qmemo: '',
@@ -439,10 +590,79 @@ input:focus-visible,button:focus-visible,a:focus-visible{outline:3px solid #2B1D
 
   function navStyle(on) { return 'background: none; border: 0; border-bottom: 2px solid ' + (on ? '#2B1D0E' : 'transparent') + '; padding: 10px 4px; min-height: 44px; font: inherit; font-size: 15px; font-weight: ' + (on ? '700' : '500') + '; color: #2B1D0E; cursor: pointer'; }
 
+  var extraVals = function (s, set, go, field, navStyle) {
+    var DAYS = '일월화수목금토';
+    var fmt = function (d) { return (d.getMonth() + 1) + '월 ' + d.getDate() + '일 (' + DAYS[d.getDay()] + ')'; };
+    var nd = new Date();
+    var add = (8 - nd.getDay()) % 7;
+    if (add === 0 && nd.getHours() >= 7) add = 7;
+    nd.setDate(nd.getDate() + add + (s.mgSkip ? 7 : 0));
+    var pay = new Date(nd.getTime());
+    pay.setDate(pay.getDate() + 25);
+    var cancelled = s.mgStep === 2;
+    var tabStyle = function (on) { return 'border-radius: 999px; padding: 10px 18px; min-height: 44px; font: inherit; font-size: 15px; font-weight: 700; cursor: pointer; ' + (on ? 'background: #2B1D0E; color: #FFFFFF; border: 2px solid #2B1D0E;' : 'background: #FFFFFF; color: #2B1D0E; border: 2px solid #D9CDB8;'); };
+    var tab = function (t) { return s.screen === 'policy' && s.policyTab === t; };
+    return {
+      isManage: s.screen === 'manage',
+      navManage: function () { go('manage', (s.pid === 'sub' && s.orderNo && !s.mgNo) ? { mgNo: s.orderNo, mgPhone: s.phone } : {}); },
+      navManageStyle: navStyle(s.screen === 'manage'),
+      navManageCurrent: s.screen === 'manage' ? 'page' : 'false',
+      isPolicy: s.screen === 'policy',
+      isTerms: s.policyTab === 'terms',
+      isPrivacy: s.policyTab === 'privacy',
+      isRefund: s.policyTab === 'refund',
+      openTerms: function () { go('policy', { policyTab: 'terms' }); },
+      openPrivacy: function () { go('policy', { policyTab: 'privacy' }); },
+      openRefund: function () { go('policy', { policyTab: 'refund' }); },
+      openTermsStyle: tabStyle(tab('terms')),
+      openPrivacyStyle: tabStyle(tab('privacy')),
+      openRefundStyle: tabStyle(tab('refund')),
+      openTermsCurrent: tab('terms') ? 'page' : 'false',
+      openPrivacyCurrent: tab('privacy') ? 'page' : 'false',
+      openRefundCurrent: tab('refund') ? 'page' : 'false',
+      mgShowLookup: !s.mgFound,
+      mgShowDash: !!s.mgFound,
+      mgNo: s.mgNo, mgPhone: s.mgPhone, mgAddrDraft: s.mgAddrDraft,
+      onMgNo: field('mgNo'), onMgPhone: field('mgPhone'), onMgAddrDraft: field('mgAddrDraft'),
+      mgHasErr: !!s.mgErr,
+      mgErr: s.mgErr || '',
+      mgLookup: function () {
+        if (!String(s.mgNo).trim() || !String(s.mgPhone).trim()) { set({ mgErr: '주문번호와 연락처를 모두 입력해 주세요.' }); return; }
+        set({ mgFound: true, mgErr: '', mgMsg: '', mgAddr: s.mgAddr || s.addr || '서울시 ○○구 ○○로 00, 101동 101호' });
+      },
+      mgNoShown: s.mgNo,
+      mgStatus: cancelled ? '해지 예정' : (s.mgSkip ? '이용 중 · 다음 주 건너뜀' : '이용 중'),
+      mgBadgeStyle: 'border-radius: 999px; padding: 6px 12px; font-size: 14px; font-weight: 700; ' + (cancelled ? 'background: #FDECEA; color: #8A1C12;' : 'background: #E3F1E4; color: #1E5B2A;'),
+      mgNextDelivery: fmt(nd) + ' 아침 7시 전',
+      mgNextPay: cancelled ? '없음 (해지 예정)' : fmt(pay) + '까지 63,600원',
+      mgAddr: s.mgAddr,
+      mgAddrView: !s.mgEditing,
+      mgAddrEditing: !!s.mgEditing,
+      mgEditAddr: function () { set({ mgEditing: true, mgAddrDraft: s.mgAddr, mgMsg: '' }); },
+      mgSaveAddr: function () {
+        if (!String(s.mgAddrDraft).trim()) return;
+        set({ mgEditing: false, mgAddr: s.mgAddrDraft, mgMsg: '배송지를 바꿨어요. 다음 배송부터 새 주소로 보내드려요.' });
+      },
+      mgCancelEdit: function () { set({ mgEditing: false }); },
+      mgHasMsg: !!s.mgMsg,
+      mgMsg: s.mgMsg || '',
+      mgCanAct: s.mgStep === 0,
+      mgAsking: s.mgStep === 1,
+      mgCancelled: cancelled,
+      mgSkipLabel: s.mgSkip ? '건너뛰기 취소' : '다음 주 한 번 건너뛰기',
+      mgToggleSkip: function () { set({ mgSkip: !s.mgSkip, mgMsg: s.mgSkip ? '건너뛰기를 취소했어요. 다음 주에도 그대로 배송돼요.' : '다음 주 배송을 한 번 건너뛰었어요. 입금 기한도 한 주 뒤로 미뤄져요.' }); },
+      mgAskCancel: function () { set({ mgStep: 1, mgMsg: '' }); },
+      mgConfirmCancel: function () { set({ mgStep: 2, mgMsg: '해지 신청이 접수됐어요. 이미 입금한 4주분까지만 배송되고, 이후 결제는 없어요.' }); },
+      mgKeep: function () { set({ mgStep: 0 }); },
+      mgUndoCancel: function () { set({ mgStep: 0, mgMsg: '해지를 철회했어요. 구독이 그대로 이어져요.' }); },
+      mgLogout: function () { set({ mgFound: false, mgNo: '', mgPhone: '', mgStep: 0, mgSkip: false, mgEditing: false, mgMsg: '', mgErr: '', mgAddr: '' }); }
+    };
+  };
+
   function vals() {
     var c = calc();
     var q = Math.max(30, parseInt(s.qqty, 10) || 30);
-    return {
+    return Object.assign(extraVals(s, set, go, function () { return null; }, navStyle), {
       isHome: s.screen === 'home',
       isOrder: s.screen === 'order',
       isPay: s.screen === 'pay',
@@ -481,7 +701,7 @@ input:focus-visible,button:focus-visible,a:focus-visible{outline:3px solid #2B1D
       qestLabel: won(q * 2700),
       qcompanyShown: s.qcompany || '-',
       quoteNo: s.quoteNo
-    };
+    });
   }
 
   var productList = document.getElementById('product-list');
@@ -577,7 +797,9 @@ input:focus-visible,button:focus-visible,a:focus-visible{outline:3px solid #2B1D
   document.addEventListener('click', function (e) {
     var el = e.target.closest('[data-click]');
     if (!el) return;
-    var fn = actions[el.getAttribute('data-click')];
+    var key = el.getAttribute('data-click');
+    var fn = actions[key];
+    if (!fn) { var vf = vals()[key]; if (typeof vf === 'function') fn = vf; }
     if (fn) { e.preventDefault(); fn(); }
   });
 
